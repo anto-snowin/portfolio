@@ -9,7 +9,7 @@ css
 }
 
 body {
-  background: #0f172a;
+  background: #b8e0d2;
   color: #e5e7eb;
   line-height: 1.6;
 }
@@ -24,7 +24,7 @@ body {
 .navbar {
   position: fixed;
   width: 100%;
-  background: #020617;
+  background: #d6eadf;
   padding: 1rem 0;
   z-index: 1000;
 }
