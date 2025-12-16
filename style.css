@@ -9,7 +9,7 @@ css
 }
 
 body {
-  background: #e3f2fd;
+  background: #AEC6CF;
   color: #1e293b;
   line-height: 1.6;
 }
@@ -39,15 +39,15 @@ body {
 
 .hero p {
   font-size: 1.3rem;
-  color: #90caf9;
+  color: #e2e8f0;
 }
 
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
   padding: 0.7rem 1.5rem;
-  background: #90caf9;
-  color: #1e293b;
+  background: #ffffff;
+  color: #AEC6CF;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
@@ -61,7 +61,7 @@ body {
 .section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #1565c0;
+  color: #1e293b;
 }
 
 .cards {
@@ -101,7 +101,7 @@ body {
 footer {
   text-align: center;
   padding: 1rem;
-  background: #bbdefb;
+  background: #90a4ae;
 }
 
 /* ANIMATIONS */
