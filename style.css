@@ -5,19 +5,26 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ===== BODY : Animated Pastel Gradient ===== */
+/* ===== BODY : SCROLL-CONTROLLED PASTEL GRADIENT ===== */
 body {
+  --grad-pos: 0%;
   background: linear-gradient(
-    -45deg,
-    #B3EBF2,
-    #E0BBE4,
-    #FFBCD9,
-    #B3EBF2
+    135deg,
+    #c9e4f6,
+    #e6c9f2,
+    #ffd6e8,
+    #c9e4f6
   );
   background-size: 400% 400%;
-  animation: gradientBG 16s ease infinite;
-  color: #222222;
+  background-position: var(--grad-pos) 50%;
+  transition: background-position 0.15s linear;
+  color: #1f2937;
   line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
@@ -29,146 +36,119 @@ body {
 /* ===== HERO ===== */
 .hero {
   height: 100vh;
-  background: linear-gradient(
-              -45deg,
-              rgba(179, 235, 242, 0.6),
-              rgba(224, 187, 228, 0.6),
-              rgba(255, 188, 217, 0.6)
-            ),
-            url('https://i.postimg.cc/1XvYM67V/restraunt2.jpg') center/cover;
-  background-size: 400% 400%, cover;
-  animation: gradientBG 16s ease infinite;
+  background:
+    linear-gradient(
+      rgba(255,255,255,0.65),
+      rgba(255,255,255,0.65)
+    ),
+    linear-gradient(
+      135deg,
+      #c9e4f6,
+      #e6c9f2,
+      #ffd6e8
+    );
+  background-size: cover, 400% 400%;
+  background-position: center, var(--grad-pos) 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #ffffff;
 }
 
 .hero h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+}
+
+.hero span {
+  color: #7c3aed;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 1.3rem;
-  color: #FFBCD9;
+  margin-top: .5rem;
 }
 
 /* ===== BUTTON ===== */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
-  padding: 0.75rem 1.6rem;
-  background: #FFBCD9;
-  color: #222222;
+  padding: .8rem 2rem;
+  background: #7c3aed;
+  color: white;
   border-radius: 30px;
-  text-decoration: none;
   font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform .3s ease, box-shadow .3s ease;
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(255, 188, 217, 0.6);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(124,58,237,0.35);
 }
 
 /* ===== SECTIONS ===== */
 .section {
-  padding: 6rem 0 4rem;
+  padding: 6rem 1rem;
 }
 
 .section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #3a2c42;
+  color: #4c1d95;
 }
 
 /* ===== CARDS ===== */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
   gap: 1.5rem;
 }
 
 .card {
-  background: #ffffff;
-  padding: 1.3rem;
-  border-radius: 16px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(12px);
+  padding: 2rem;
+  border-radius: 18px;
   text-align: center;
-  box-shadow: 0 12px 30px rgba(255, 188, 217, 0.45);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+  transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(255, 188, 217, 0.65);
-}
-
-.card img {
-  width: 100%;
-  border-radius: 14px;
+  transform: translateY(-8px);
+  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
 }
 
 .card i {
   font-size: 2rem;
-  color: #FFBCD9;
-  margin-bottom: 0.5rem;
+  color: #7c3aed;
+  margin-bottom: .5rem;
 }
 
-/* ===== CONTACT FORM ===== */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 0.85rem;
-  border-radius: 10px;
-  border: 1px solid #FFBCD9;
-  background: #ffffff;
-  color: #222222;
-}
-
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: #8b6f85;
+/* ===== ABOUT IMAGES ===== */
+.about img {
+  width: 100%;
+  border-radius: 16px;
 }
 
 /* ===== FOOTER ===== */
 footer {
+  background: rgba(255,255,255,0.6);
   text-align: center;
-  padding: 1.2rem;
-  background: #FFBCD9;
-  color: #222222;
+  padding: 1.5rem;
   font-weight: 500;
 }
 
-/* ===== SCROLL ANIMATIONS ===== */
+/* ===== SCROLL REVEAL ===== */
 .hidden {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 0.8s ease;
+  transition: all .8s ease;
 }
 
 .show {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* ===== GRADIENT KEYFRAMES ===== */
-@keyframes gradientBG {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
 }
 
 /* ===== RESPONSIVE ===== */

@@ -5,183 +5,152 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Anto Snowin | Portfolio</title>
 
+  <link rel="stylesheet" href="style.css" />
+
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-    body { background: #AEC6CF; color: #1e293b; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-
-
-    .hero { height: 100vh; display: flex; justify-content: center; align-items: center; text-align: center; background: #AEC6CF; }
-    .hero h1 { font-size: 3rem; margin-bottom: .5rem; }
-    .hero span { color: #ffffff; font-weight: bold; }
-    .btn { display: inline-block; margin-top: 1.5rem; padding: .75rem 2rem; background: #ffffff; color: #AEC6CF; border-radius: 30px; font-weight: bold; }
-
-    .section { padding: 6rem 1rem; }
-    .container { max-width: 1100px; margin: auto; text-align: center; }
-    h2 { font-size: 2.2rem; margin-bottom: 1rem; }
-
-    .about p { max-width: 700px; margin: auto; color: #334155; }
-
-    .cards { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 1.5rem; margin-top: 2rem; }
-    .card { background: #ffffff; padding: 2rem; border-radius: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
-    .card i { font-size: 2rem; color: #AEC6CF; margin-bottom: .5rem; }
-    .card h3 { margin-top: .5rem; }
-
-    .contact-form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 1rem; }
-    input, textarea { padding: .75rem; border-radius: 10px; border: none; }
-
-    footer { text-align: center; padding: 1.5rem; background: #90a4ae; color: #ffffff; }
-
-    .hidden { opacity: 0; transform: translateY(40px); transition: .8s ease; }
-    .show { opacity: 1; transform: translateY(0); }
-  </style>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  />
 </head>
 <body>
 
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div>
-      <h1>Hi, I'm <span>Anto Snowin</span></h1>
-      <p><span id="typing"></span></p>
-      <a href="#projects" class="btn">View Projects</a>
-    </div>
-  </section>
+<!-- HERO -->
+<section class="hero">
+  <div>
+    <h1>Hi, I'm <span>Anto Snowin</span></h1>
+    <p id="typing"></p>
+    <a href="#projects" class="btn">View Projects</a>
+  </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about" class="section hidden about">
-    <div class="container">
-      <h2>About Me</h2>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;">
-        <div>
-          <p>
-            I'm a passionate Computer Science student with strong interest in Web Development,
-            Data Structures, AI ,cloud technologies and Modern UI design. I enjoy building clean, responsive,
-            and user-friendly applications.
-          </p>
-          <p style="margin-top:1rem;color:#334155;">
-            I focus on writing efficient code and continuously learning new technologies
-            to improve my skills.
-          </p>
-        </div>
-        <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;">
-          <img src="images\WhatsApp Image 2025-12-14 at 10.14.56 PM.jpeg" style="width:100%;border-radius:15px;" alt="Profile" />
-          <img src="images\WhatsApp Image 2025-12-14 at 9.57.24 PM.jpeg" style="width:100%;border-radius:15px;" alt="Myself" />
-        </div>
+<!-- ABOUT -->
+<section class="section hidden about">
+  <div class="container">
+    <h2>About Me</h2>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;">
+      <div>
+        <p>
+          I'm a passionate Computer Science student with strong interest in Web
+          Development, Data Structures, AI, Cloud technologies and modern UI design.
+        </p>
+        <p style="margin-top:1rem;">
+          I enjoy writing clean code and continuously learning new technologies.
+        </p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;">
+        <img src="images/WhatsApp Image 2025-12-14 at 10.14.56 PM.jpeg" alt="">
+        <img src="images/WhatsApp Image 2025-12-14 at 9.57.24 PM.jpeg" alt="">
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section hidden">
-    <div class="container">
-      <h2>Skills</h2>
-      <div class="cards">
-        <div class="card"><i class="fab fa-python"></i><h3>PYTHON</h3></div>
-        <div class="card"><i class="fab fa-html5"></i><h3>HTML & CSS</h3></div>
-        <div class="card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
-        <div class="card"><i class="fab fa-java"></i><h3>Java</h3></div>
-        <div class="card"><i class="fas fa-database"></i><h3>SQL</h3></div>
-        <div class="card"><i class="fab fa-git-alt"></i><h3>Git & GitHub</h3></div>
+<!-- SKILLS -->
+<section class="section hidden">
+  <div class="container">
+    <h2>Skills</h2>
+    <div class="cards">
+      <div class="card"><i class="fab fa-python"></i><h3>Python</h3></div>
+      <div class="card"><i class="fab fa-html5"></i><h3>HTML & CSS</h3></div>
+      <div class="card"><i class="fab fa-js"></i><h3>JavaScript</h3></div>
+      <div class="card"><i class="fab fa-java"></i><h3>Java</h3></div>
+      <div class="card"><i class="fas fa-database"></i><h3>SQL</h3></div>
+      <div class="card"><i class="fab fa-git-alt"></i><h3>Git & GitHub</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section hidden">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Personal responsive portfolio using HTML, CSS & JS.</p>
+        <a href="https://github.com/anto-snowin/portfolio" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Netflix Stock Predictor</h3>
+        <p>Predict Netflix stock prices using LSTM Neural Networks.</p>
+        <a href="https://github.com/anto-snowin/netflix-stock-predictor" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section hidden">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p>Personal responsive portfolio using HTML, CSS & JS.</p>
-          <a href="https://github.com/anto-snowin/portfolio" target="_blank" style="display:inline-block;margin-top:1rem;color:#AEC6CF;">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </div>
-        <div class="card">
-          <h3>Netflix stock Predictor</h3>
-          <p>Track and predict the stock price of Netflix using LSTM Neural Networks</p>
-          <a href="https://github.com/anto-snowin/netflix-stock-predictor" target="_blank" style="display:inline-block;margin-top:1rem;color:#AEC6CF;">
-            <i class="fab fa-github"></i> View on GitHub
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-
-<section id="contact" class="section hidden">
+<!-- CONTACT -->
+<section class="section hidden">
   <div class="container">
     <h2>Connect With Me</h2>
 
-    <div style="display:flex;justify-content:center;align-items:center;gap:1.5rem;flex-wrap:wrap;margin-top:1rem;">
+    <div class="cards">
       <a class="card" href="https://www.linkedin.com/in/anto-snowin-1b9666327/" target="_blank">
-        <i class="fab fa-linkedin"></i>
-        <h3>LinkedIn</h3>
+        <i class="fab fa-linkedin"></i><h3>LinkedIn</h3>
       </a>
-
       <a class="card" href="https://github.com/anto-snowin" target="_blank">
-        <i class="fab fa-github"></i>
-        <h3>GitHub</h3>
+        <i class="fab fa-github"></i><h3>GitHub</h3>
       </a>
-
       <a class="card" href="https://www.instagram.com/anto_snowin/" target="_blank">
-        <i class="fab fa-instagram"></i>
-        <h3>Instagram</h3>
+        <i class="fab fa-instagram"></i><h3>Instagram</h3>
       </a>
-
-      <a class="card" href="https://x.com/antosnowin07" target="_blank">
-        <i class="fab fa-twitter"></i>
-        <h3>Twitter</h3>
-      </a>
-
       <a class="card" href="snowin_resume.pdf" target="_blank">
-        <i class="fas fa-file-pdf"></i>
-        <h3>Resume</h3>
+        <i class="fas fa-file-pdf"></i><h3>Resume</h3>
       </a>
     </div>
   </div>
 </section>
 
+<footer>
+  © 2025 Anto Snowin. All Rights Reserved.
+</footer>
 
-  <footer>
-    <p>© 2025 Anto Snowin. All Rights Reserved.</p>
-  </footer>
-
+<!-- SCRIPTS -->
 <script>
-  const roles = ["Web Developer","CS Student ","Problem Solver","Photographer","Traveler","Caffeine >>>"];
-  let i = Math.floor(Math.random() * roles.length);
-  let j = 0;
-  const typing = document.getElementById("typing");
+/* Typing Effect */
+const roles = ["Web Developer", "CS Student", "Problem Solver", "Photographer", "Traveler"];
+let i = 0, j = 0;
+const typing = document.getElementById("typing");
 
-  function type() {
-    if (j < roles[i].length) {
-      typing.textContent += roles[i][j++];
-      setTimeout(type, 100);
-    } else setTimeout(erase, 1500);
+function type() {
+  if (j < roles[i].length) {
+    typing.textContent += roles[i][j++];
+    setTimeout(type, 100);
+  } else setTimeout(erase, 1500);
+}
+
+function erase() {
+  if (j > 0) {
+    typing.textContent = roles[i].substring(0, --j);
+    setTimeout(erase, 60);
+  } else {
+    i = (i + 1) % roles.length;
+    setTimeout(type, 400);
   }
-  function erase() {
-    if (j > 0) {
-      typing.textContent = roles[i].substring(0, --j);
-      setTimeout(erase, 60);
-    } else {
-      let next;
-      do { next = Math.floor(Math.random() * roles.length); } while (next === i);
-      i = next;
-      setTimeout(type, 500);
-    }
-  }
-  type();
+}
+type();
 
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
-  }, { threshold: 0.2 });
+/* Scroll reveal */
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => entry.isIntersecting && entry.target.classList.add("show"));
+}, { threshold: 0.2 });
 
-  document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+document.querySelectorAll(".hidden").forEach(el => observer.observe(el));
+
+/* Scroll-based gradient speed control */
+window.addEventListener("scroll", () => {
+  const scrollPercent =
+    window.scrollY / (document.body.scrollHeight - window.innerHeight);
+  document.body.style.setProperty("--grad-pos", `${scrollPercent * 100}%`);
+});
 </script>
 
 </body>
