@@ -5,8 +5,17 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* ===== BODY : Animated Pastel Gradient ===== */
 body {
-  background: linear-gradient(135deg, #B3EBF2, #E0BBE4);
+  background: linear-gradient(
+    -45deg,
+    #B3EBF2,
+    #E0BBE4,
+    #FFBCD9,
+    #B3EBF2
+  );
+  background-size: 400% 400%;
+  animation: gradientBG 16s ease infinite;
   color: #222222;
   line-height: 1.6;
 }
@@ -17,14 +26,18 @@ body {
   margin: auto;
 }
 
-/* HERO */
+/* ===== HERO ===== */
 .hero {
   height: 100vh;
   background: linear-gradient(
-              rgba(255, 188, 217, 0.35),
-              rgba(224, 187, 228, 0.55)
+              -45deg,
+              rgba(179, 235, 242, 0.6),
+              rgba(224, 187, 228, 0.6),
+              rgba(255, 188, 217, 0.6)
             ),
             url('https://i.postimg.cc/1XvYM67V/restraunt2.jpg') center/cover;
+  background-size: 400% 400%, cover;
+  animation: gradientBG 16s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,7 +55,7 @@ body {
   color: #FFBCD9;
 }
 
-/* BUTTON */
+/* ===== BUTTON ===== */
 .btn {
   display: inline-block;
   margin-top: 1.5rem;
@@ -60,7 +73,7 @@ body {
   box-shadow: 0 8px 20px rgba(255, 188, 217, 0.6);
 }
 
-/* SECTIONS */
+/* ===== SECTIONS ===== */
 .section {
   padding: 6rem 0 4rem;
 }
@@ -71,7 +84,7 @@ body {
   color: #3a2c42;
 }
 
-/* CARDS */
+/* ===== CARDS ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -97,7 +110,13 @@ body {
   border-radius: 14px;
 }
 
-/* CONTACT */
+.card i {
+  font-size: 2rem;
+  color: #FFBCD9;
+  margin-bottom: 0.5rem;
+}
+
+/* ===== CONTACT FORM ===== */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -118,7 +137,7 @@ body {
   color: #8b6f85;
 }
 
-/* FOOTER */
+/* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 1.2rem;
@@ -127,7 +146,7 @@ footer {
   font-weight: 500;
 }
 
-/* ANIMATIONS */
+/* ===== SCROLL ANIMATIONS ===== */
 .hidden {
   opacity: 0;
   transform: translateY(40px);
@@ -139,7 +158,20 @@ footer {
   transform: translateY(0);
 }
 
-/* RESPONSIVE */
+/* ===== GRADIENT KEYFRAMES ===== */
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.2rem;
