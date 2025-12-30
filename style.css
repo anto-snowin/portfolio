@@ -65,7 +65,7 @@ a {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(124,58,237,0.35);
+  box-shadow: 0 10px 25px rgb(242 133 133);
 }
 
 /* ===== SECTIONS ===== */
