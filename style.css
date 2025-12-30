@@ -100,7 +100,7 @@ a {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+  box-shadow: 0 20px 45px rgb(242 133 133);
 }
 
 .card i {
