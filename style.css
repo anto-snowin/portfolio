@@ -5,20 +5,12 @@
   font-family: 'Segoe UI', sans-serif;
 }
 
-/* ===== BODY : SCROLL-CONTROLLED PASTEL GRADIENT ===== */
+/* ===== BODY ===== */
 body {
   --grad-pos: 0%;
-  background: linear-gradient(
-    135deg,
-    #c9e4f6,
-    #e6c9f2,
-    #ffd6e8,
-    #c9e4f6
-  );
-  background-size: 400% 400%;
-  background-position: var(--grad-pos) 50%;
+  background: #1F2937;
   transition: background-position 0.15s linear;
-  color: #1f2937;
+  color: #ffffff; /* TEXT COLOR FIXED */
   line-height: 1.6;
 }
 
@@ -36,19 +28,7 @@ a {
 /* ===== HERO ===== */
 .hero {
   height: 100vh;
-  background:
-    linear-gradient(
-      rgba(255,255,255,0.65),
-      rgba(255,255,255,0.65)
-    ),
-    linear-gradient(
-      135deg,
-      #c9e4f6,
-      #e6c9f2,
-      #ffd6e8
-    );
-  background-size: cover, 400% 400%;
-  background-position: center, var(--grad-pos) 50%;
+  background: #1F2937;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -57,16 +37,18 @@ a {
 
 .hero h1 {
   font-size: 3rem;
+  color: #ffffff;
 }
 
 .hero span {
-  color: #7c3aed;
+  color: #27F5CC;
   font-weight: 700;
 }
 
 .hero p {
   font-size: 1.3rem;
   margin-top: .5rem;
+  color: #ffffff;
 }
 
 /* ===== BUTTON ===== */
@@ -74,8 +56,8 @@ a {
   display: inline-block;
   margin-top: 1.5rem;
   padding: .8rem 2rem;
-  background: #7c3aed;
-  color: white;
+  background: #27F5CC;
+  color: #ffffff;
   border-radius: 30px;
   font-weight: 600;
   transition: transform .3s ease, box-shadow .3s ease;
@@ -83,18 +65,19 @@ a {
 
 .btn:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px rgba(124,58,237,0.35);
+  box-shadow: 0 10px 25px rgb(242 133 133);
 }
 
 /* ===== SECTIONS ===== */
 .section {
   padding: 6rem 1rem;
+  color: #ffffff;
 }
 
 .section h2 {
   text-align: center;
   margin-bottom: 2rem;
-  color: #4c1d95;
+  color: #27F5CC;
 }
 
 /* ===== CARDS ===== */
@@ -105,23 +88,24 @@ a {
 }
 
 .card {
-  background: rgba(255,255,255,0.75);
+  background: #1F2937;
   backdrop-filter: blur(12px);
   padding: 2rem;
   border-radius: 18px;
   text-align: center;
+  color: #ffffff; /* CARD TEXT FIXED */
   box-shadow: 0 15px 35px rgba(0,0,0,0.12);
   transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 20px 45px rgba(0,0,0,0.18);
+  box-shadow: 0 20px 45px rgb(242 133 133);
 }
 
 .card i {
   font-size: 2rem;
-  color: #7c3aed;
+  color: #27F5CC;
   margin-bottom: .5rem;
 }
 
@@ -133,10 +117,11 @@ a {
 
 /* ===== FOOTER ===== */
 footer {
-  background: rgba(255,255,255,0.6);
+  background: #1F2937;
   text-align: center;
   padding: 1.5rem;
   font-weight: 500;
+  color: #ffffff;
 }
 
 /* ===== SCROLL REVEAL ===== */
